@@ -5,9 +5,9 @@ const Cart = (props) => {
     <ul className={classes["cart-items"]}>
       {[
         { id: 1, name: "IphoneX", amount: 3, price: 5000 },
-        //{ id: 2, name: "Ipod5", amount: 2, price: 2500 },
-        //{ id: 3, name: "GalaxyS6", amount: 4, price: 6500 },
-        //{ id: 4, name: "Ps5", amount: 3, price: 8000 },
+        { id: 2, name: "Ipod5", amount: 2, price: 2500 },
+        { id: 3, name: "GalaxyS6", amount: 4, price: 6500 },
+        { id: 4, name: "Ps5", amount: 3, price: 8000 },
       ].map((obj) => (
         <li>{obj.name}</li>
       ))}
