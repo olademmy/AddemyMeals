@@ -7,8 +7,10 @@ const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const isEmpty = cartCtx.items.length === 0;
   const totalAmount = `$${cartCtx.totalAmount}`;
-  const itemAddHandler = (item) => {};
-  const itemRemoveHandler = (id) => {};
+  const itemAddHandler = (item) => cartCtx.addItem({ ...item, amount: 1 });
+  const itemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
   const cartItems = (
     <ul className={classes["cart-items"]}>
       {cartCtx.items.map((item) => (

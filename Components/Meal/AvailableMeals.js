@@ -4,27 +4,27 @@ import MealItem from "./MealItem/MealItem";
 const DUMMY_MEALS = [
   {
     id: "m1",
-    name: "Sushi",
-    description: "Finest fish and veggies",
-    price: 22.99,
+    name: "Amala & Gbegiri",
+    description: "Yam Flour with local beans soup",
+    price: 25,
   },
   {
     id: "m2",
-    name: "Schnitzel",
-    description: "A german specialty!",
-    price: 16.5,
+    name: "Jollof Rice",
+    description: "Nigerian Rice cuisine",
+    price: 30,
   },
   {
     id: "m3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
-    price: 12.99,
+    name: "Chicken Suya",
+    description: "Nigerian, Spicy, Chicken, Barbecue",
+    price: 40,
   },
   {
     id: "m4",
-    name: "Green Bowl",
-    description: "Healthy...and green...",
-    price: 18.99,
+    name: "Vegetable Salad ",
+    description: "Fresh, Healthy...and green...",
+    price: 20,
   },
 ];
 const AvailableMeals = () => {
