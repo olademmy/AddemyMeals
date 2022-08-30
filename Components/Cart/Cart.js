@@ -38,7 +38,11 @@ const Cart = (props) => {
         <button className={classes["button--alt"]} onClick={props.onHideCart}>
           Close
         </button>
-        {!isEmpty && <button className={classes.button}>Order</button>}
+        {!isEmpty && (
+          <button className={classes.button} onClick={props.onCheckOut}>
+            Order
+          </button>
+        )}
       </div>
     </Modal>
   );
